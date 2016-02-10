@@ -1,0 +1,3 @@
+[submodule "webbluetoothapi"]
+	path = webbluetoothapi
+	url = https://github.com/ticktockreed/webbluetoothapi.git
