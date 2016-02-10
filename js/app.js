@@ -8,10 +8,10 @@ function getBluetoothApi() {
 
 function scanForDevices() {
     navigator.bluetooth.requestDevice({ 
-        // filters: [{ services: ['device_information'] }]         
-        filters: [{
-            services: ['b9407f30-f5f8-466e-aff9-25556b57fe6d']
-        }] 
+        filters: [{ services: ['device_information'] }]         
+        // filters: [{
+        //     services: ['b9407f30-f5f8-466e-aff9-25556b57fe6d']
+        // }] 
     })
     .then(device => {
         console.log('device', device);
