@@ -1,0 +1,23 @@
+
+<div class="simple-chat">
+	<div class="simple-chat-scroll">
+		<div ng-repeat="message in conversation track by $index" ng-animate class="chat-bubble-row">
+			<tr-chat-bubble></tr-chat-bubble>
+		</div>
+	</div>
+	<tr-chat-questions questions="questions"></tr-chat-questions>
+</div>
+
+	<div ng-show="typing" class="simple-chat-typing">
+		<div class="row-columns--1">
+			<div class="container">
+				<div class="col-container">
+					<div class="typing-indicator">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

@@ -1,0 +1,9 @@
+<div class="chat-questions">
+	<a href="" ng-if="!question.link" ng-repeat="question in questions" class="chat-question" ng-click="clickAnswer(question)">
+		{{question.text}}
+	</a>
+	
+	<a ng-href="{{question.link}}" ng-if="question.link" ng-repeat="question in questions" class="chat-question">
+		{{question.text}}
+	</a>
+</div>
